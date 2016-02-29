@@ -1,0 +1,360 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	font: 14px Verdana, sans-serif;
+	color: #222;
+}
+
+.anchor{
+	display:block;
+	height:80px;
+	margin-top:-80px;
+	visibility:hidden;	
+}
+
+.container {
+	width:90vw;
+	padding:0 0 0 10px;
+	margin:0 auto;
+}
+
+nav{
+	margin:0;
+	padding:0;
+	background:#f00;
+	height:60px;
+	position: fixed;
+	width:100vw;
+	display:block;
+}
+
+#logo{
+	display:inline-block;
+	height: 100px;
+	float:left;
+	margin-right:20px;
+}
+#landing{
+ 	background-image:url("../assets/sevdice_macedonian.jpg");
+	background-size: 100vw;
+	background-repeat:no-repeat;
+	height:0;
+	padding-top:56.25%;
+	
+}
+#landscape{
+	width:100vw;
+	height:auto;
+}
+#logotype{
+	margin-top:60px;
+	margin-left:5vw;
+	padding-left:100px;
+	height:40px;
+	position:fixed;
+	z-index:20;
+}
+
+nav>div>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow:hidden;
+	display:inline-block;
+}
+
+nav>div>ul>li>a{
+    display: inline-block;
+    width:15vw;
+	max-width:120px;
+	min-width:65px;
+	background:#f00;
+	color:#fff;
+	text-decoration:none;
+	line-height:60px;
+	text-align:center;
+	margin-left:5px;
+}
+
+nav>div>ul>li>a:hover{
+    display: inline-block;
+    width:15vw;
+	max-width:120px;
+	min-width:65px;
+	background:#fff;
+	color:#f00;
+	text-decoration:none;
+	line-height:60px;
+	text-align:center;
+	margin-left:5px;
+}
+
+nav>div>ul>li{
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+#fb{
+	width:20px;
+	height: auto;
+	display:inline-block;
+	float:right;
+	padding-top:20px;
+	
+}
+
+.more{
+	display:inline-block;
+	height:25px;
+	width:80px;
+	background:#808080;
+	overflow:auto;
+	float:right;
+	border-radius:2px;
+	color:#fff;
+	text-align:center;
+	border: 0;
+	margin-right:5px;
+}
+
+.minimize{
+	display:inline-block;
+	height:25px;
+	width:80px;
+	background:#f00;
+	overflow:auto;
+	float:right;
+	border-radius:2px;
+	color:#fff;
+	text-align:center;
+	border: 0;
+	margin-right:5px;
+	margin-top:2px;
+}
+
+section h1 {
+	line-height:80px;
+	vertical-align:middle;
+}
+
+section h3 {
+	line-height:30px;
+	vertical-align:middle;
+}
+
+
+.currentNews{
+	width: 50%;
+	transition: width 300ms;
+	height:auto;
+	z-index: 20;
+	padding:5px;
+	
+}
+
+.currentNews img{
+	width:200px;
+	height:auto;
+}
+news{
+	width:200px;
+	height: 200px;
+	display:inline-block;
+	margin: 0 10px 10px 0;
+	border: 1px gray solid;
+	border-radius:5px;
+	overflow:hidden;
+	background: #fff;
+	transition: width 300ms;
+}
+
+news img{
+	width:100%;
+	position:top;
+}
+news title{
+	position:top;
+	height:30 px;
+	width: 100%;
+	color:#222;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	display: block;
+	padding-left:5px;
+	font-weight:700;
+	z-index:1;
+}
+news p{
+	display: none;
+	margin-top:10px;
+}
+
+news content{
+	width: 95%;
+	display:block;
+	text-align:right;
+}
+
+news>button:hover{
+	background-color:#999;
+}
+
+#about{
+	margin-bottom:10px;
+}
+#about div{
+	display: inline-block;
+	min-width:255px;
+	width:49%;
+	height:auto;
+	max-height: 350px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	vertical-align:top;
+}
+
+#about img{
+	width:250px;
+	float:left;
+	margin: 0 5px 5px 0;
+}
+
+#about p{
+	margin: 0 5px 5px 0;
+	background-color:#fff;
+}
+
+rect{
+	width:100%;
+	height:30px;
+	display:block;
+}
+
+#filter {
+	width:200px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+#filter p {
+	display: inline-block;
+	margin:5px;
+	line-height: 20px;
+	text-align:center;
+	padding-left:10px;
+}
+#repetitions {
+	display:inline-block;
+	width:80%;
+	vertical-align: top;
+}
+
+@media only screen and (max-width:1439px){
+        #repetitions{
+           width:75%; 
+		   min-width:525px;
+        }
+		}
+
+@media only screen and (max-width:906px){
+        #repetitions{
+           width:60%; 
+		   min-width:175px;
+        }
+}		
+		
+repetition {
+	width:160px;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0 10px 10px 0;
+	border: 1px gray solid;	
+	border-radius:5px;
+	line-height:20px;
+	background-color:#fff;
+}
+repetition > *
+{
+  display: block;
+  text-align:left;
+  margin: 5px 0;
+  padding-left:5px;
+}
+
+repetition day{
+	font: bold 16px Verdana;
+	margin:2px;
+	background:#f00;
+	border-radius:5px;
+	color:#fff;
+}
+
+repetition>time {
+	font-style: italic;
+	margin:5px;
+}
+
+.goHomeVisible {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: #808080;
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+	border:none;
+}
+
+#goHome:hover {
+	background-color: #f00;
+}
+
+#goHome:active{
+	background-color:#55808080;
+}
+
+#gallery img{
+	width:30%;
+	min-width: 240px;
+}
+
+
+#gallery div{
+	width:30%;
+	text-align:center;
+	padding: 20px 0;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#gallery p{
+	width:100%;
+	font-style: italic;
+	background-color:white;
+	margin: 0 auto;
+}
+
+#gallery>div>a{
+	color:#808080;
+}
+
+#fbGalLink{
+	min-width:50px;
+	width:60%;
+	height:auto;
+}
+
+section span{
+	line-height:25px;
+}
+
+#contacts{
+	margin-bottom:20px;
+}
